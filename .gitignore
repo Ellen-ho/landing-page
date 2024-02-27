@@ -2,3 +2,4 @@
 *.xd
 *.fi
 .DS_Store
+node_modules
