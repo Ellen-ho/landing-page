@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/jpeg"
+      sizes="38x38"
+      href="/images/girl-advanture.jpeg"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/stylesheets/normalize.min.css" />
+    <link rel="stylesheet" href="/stylesheets/theme.css" />
+    <link rel="stylesheet" href="/stylesheets/index.css" />
+
+    <title>Yu Hua's Application</title>
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <img src="/images/girl-advanture.jpeg" alt="" class="header-image" />
+        <span>Yu Hua's Application</span>
+      </div>
+      <div class="right">
+        <a href="#footer" id="contact-link">CONTACT</a>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          title="Toggles light & dark"
+          aria-label="auto"
+          aria-live="polite"
+        >
+          <svg
+            class="sun-and-moon"
+            aria-hidden="true"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <mask class="moon" id="moon-mask">
+              <rect x="0" y="0" width="100%" height="100%" fill="white" />
+              <circle cx="24" cy="10" r="6" fill="black" />
+            </mask>
+            <circle
+              class="sun"
+              cx="12"
+              cy="12"
+              r="6"
+              mask="url(#moon-mask)"
+              fill="currentColor"
+            />
+            <g class="sun-beams" stroke="currentColor">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <section id="summary-intro">
+      <div class="section-inner-wrapper">
+        <div class="left">
+          <h2>Yu Hua</h2>
+          <h3>
+            喜歡解決問題 、喜歡幫助別人，讓我成為一位醫者/教育者/科技探索者。
+            在看盡生命陰晴圓缺的巨塔外，我相信不只是醫學，教育跟科技能讓每一個人在通往同一個生命終點的過程中，美好而獨特。
+          </h3>
+        </div>
+        <img src="/images/intro-image.jpg" alt="" class="right" />
+      </div>
+    </section>
+    <section id="about-me">
+      <div class="section-inner-wrapper col">
+        <h2>Who am I</h2>
+        <p>
+          在接觸及學習程式後，喜歡自己打造程式工具，解決我在醫學臨床上遇到的問題，像是：改善醫院每日的針灸診務流程工具、幫助醫師及病患自身更了解其健康跟生活型態的網站。
+        </p>
+        <p>
+          我很喜歡醫學工作，同時對科技及教育領域充滿熱忱。臨床之餘，我廣泛接觸醫療科技、學習程式、了解產業脈動。我的目標是持續深化並結合自己在不同領域的能力，為改善醫療服務和照護患者做出積極的貢獻。
+        </p>
+        <p>
+          今年初，因家人工作關係，我暫別臨床診務，居於新加坡，也因此，在近半年期間，我對於我的目標以及實際進入軟體工作領域的5W1H(Who,
+          When, What, Where, Why,
+          How)做出了更多的規劃和準備，這個過程，沒有不切實際的粉紅色泡泡，而是經過了深刻的理解與思考。
+        </p>
+        <p>
+          申請 WeHelp，是因為在自學的過程中，跟隨彭彭老師的教材學習，並深入了解
+          WeHelp 的理念。也參與近兩屆學員 Demo
+          Day，留下了深刻的印象。我期待能夠與大家一起創造和突破！
+        </p>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="section-inner-wrapper col">
+        <h2>為了成為軟體工程師，做過什麼努力？</h2>
+        <h3>專案作品</h3>
+        <div class="projects-wrapper">
+          <div class="projects-detail">
+            <div class="description">
+              <h2>Medi Connect</h2>
+              <h4>
+                這個 Web
+                專案目的是讓醫師跟病患自身能更深入地了解患者的健康狀況和生活方式，
+                並在診間以外的時空，讓大家都能更關注自我健康狀況跟交流正確資訊
+              </h4>
+              <a
+                class="demo-website"
+                href="https://medi-connect-ui.vercel.app/"
+                target="_blank"
+              >
+                Website
+              </a>
+            </div>
+            <div class="project-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    class="flip-card-image"
+                    src="/images/medi-connect-picture.png"
+                    alt="Medi Connect Picture"
+                  />
+                </div>
+                <div class="flip-card-back">
+                  <h3>Tech Stack:</h3>
+                  <div class="card-back-content">
+                    Node.js, Express, TypeScript, PostgreSQL, TypeORM, React,
+                    Material UI lib, Docker, Jest, Swagger
+                  </div>
+                  <div class="social-media">
+                    <a
+                      class="social-media-link"
+                      href="https://acupuncture-helper-service.onrender.com/users/login"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github fa-lg"></i>
+                      <span>前端</span>
+                    </a>
+                    <a
+                      class="social-media-link"
+                      href="https://github.com/Ellen-ho/medi-connect-api"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github fa-lg"></i>
+                      <span>後端</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects-detail">
+            <div class="description">
+              <h2>Acupuncture Helper</h2>
+              <h4>用於優化團隊的針灸治療流程，改進過時且容易出錯的紙本系統</h4>
+              <a
+                class="demo-website"
+                href="https://medi-connect-ui.vercel.app/"
+                target="_blank"
+              >
+                Website
+              </a>
+            </div>
+            <div class="project-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    class="flip-card-image"
+                    src="/images/acupuncture-picture.png"
+                    alt="Acupuncture Helper Picture"
+                  />
+                </div>
+                <div class="flip-card-back">
+                  <h3>Tech Stack:</h3>
+                  <div class="card-back-content">
+                    Node.js, Express, MongoDB, Mongoose, Handlebars, HTML, CSS,
+                    Bootstrap 4, Font Awesome 5
+                  </div>
+                  <div class="social-media">
+                    <a
+                      class="social-media-link"
+                      href="https://github.com/Ellen-ho/acupuncture-helper"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github fa-lg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="courses">
+      <div class="section-inner-wrapper col">
+        <h3>課程學習</h3>
+        <div class="courses-wrapper">
+          <div class="course">
+            <img
+              src="/images/coursera.png"
+              alt="icon-udemy"
+              class="course-icon"
+            />
+            <h4>Google IT Support Course (Google 計算機概論課程)</h4>
+          </div>
+          <div class="course">
+            <img src="/images/udemy.png" alt="icon-udemy" class="course-icon" />
+            <h4>The Complete Web Developer in 2023: Zero to Mastery</h4>
+          </div>
+          <div class="course">
+            <img
+              src="/images/freecodecamp.png"
+              alt="icon-freecodecamp"
+              class="course-icon"
+            />
+            <h4>FreeCodeCamp HTML + CSS + Javascripts Course</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="questions">
+      <div class="card card-left">
+        <h3 class="card-header">如果參與這個訓練，會怎麼安排學習時間？</h3>
+        <p class="card-content">
+          因暫別診務，所以我規劃且正在執行是：早上 8 點到晚上 5
+          點的時間撰寫專案程式及解題，晚餐後到就寢前整理當天的筆記。
+        </p>
+        <img
+          src="/images/icon-supervisor.png"
+          alt="icon-supervisor"
+          class="card-icon"
+        />
+      </div>
+      <div class="cards-middle">
+        <div class="card card-top">
+          <h3 class="card-header">想要加入的公司？為什麼想加入該公司？</h3>
+          <p class="card-content">
+            我想加入的公司是
+            Scribo。是一間打造智能診所服務的醫療科技新創，想加入的原因是：其服務產產品解決的臨床痛點很務實，創辦人具有醫療背景並且正在數據領域進修，團隊擁有在醫療科技方面的專業知識和跨領域能力。
+          </p>
+          <img
+            src="/images/icon-team-builder.png"
+            alt="icon-team-builder"
+            class="card-icon"
+          />
+        </div>
+        <div class="card card-bottom">
+          <h3 class="card-header">一件產生明顯負面情緒的經歷</h3>
+          <p class="card-content">
+            Medi Connect 專案初期，碰巧確診
+            Covid-19，我負責所有規格跟功能定義，才能跟另一位伙伴討論並進行開發，身體不適打亂了整個節奏，當時，非常挫折跟心力交瘁，我讓自己專注在身體每天的「變好」，而不是「還很不舒服」，同時每天仍完成一部份進度，調整讓進度「慢下來」，但沒有「停下來」。
+          </p>
+          <img
+            src="/images/icon-karma.png"
+            alt="icon-karma"
+            class="card-icon"
+          />
+        </div>
+      </div>
+      <div class="card card-right">
+        <h3 class="card-header">對我而言，最重要的一項人際交往原則</h3>
+        <p class="card-content">
+          在工作跟生活中，我很重視「同理心」。「己所不欲，勿施於人」、「能改變自己的，只有自己」是我深信的，面對病患，我不喜歡用先入為主的視角去批判，也不會有「我要改變他」的想法，而是傾聽、溝通、理解、陪伴，這當中，他自己在改變，我也在改變。
+        </p>
+        <img src="/images/icon-relationship.png" alt="" class="card-icon" />
+      </div>
+    </section>
+    <section id="learnings">
+      <div class="section-inner-wrapper col">
+        <h2>開發時的技術心得</h2>
+        <h3>theme-toggle</h3>
+        <ul>
+          <li>
+            <span>HTML: index.html 檔</span>
+            <p>
+              HTML檔 先定義好 SVG 元素區塊的範圍，SVG
+              中共含有三部份主要內容，分別是：mask
+              元素、太陽圓形主體、太陽光芒。 mask
+              元素中創造一個白色矩形跟黑色圓形，由這個黑色圓形來遮擋部份的太陽圓形主體，讓圖形變成彎彎的月亮，如此可讓太陽跟月亮透過同一個
+              SVG 内部的遮罩效果来實現。
+            </p>
+          </li>
+          <li>
+            <span>CSS: theme.css 檔</span>
+            <p>
+              theme.css
+              分別定義了白天模式和夜間模式下的視覺風格，包括文字顏色、背景顏色、圖標填充顏色以及動畫效果。
+              藉由HTML中根元素的 data-theme 屬性被設置為 light 或 dark
+              ，決定相對應的CSS變量，以改變網頁的外觀。
+              另外，在主題切換時做了一些動畫和過渡效果，像是：太陽主體的縮放變化（transform:
+              scale()）、太陽光芒的不透明度變化（opacity）、月亮的位置變化（transform:
+              translateX()）。
+            </p>
+          </li>
+          <li>
+            <span>Javascripts: theme.js 檔</span>
+            <p>
+              當使用者打開網頁時，theme.js 會調用 reflectPreference
+              函式，該函式會再調用 getColorPreference 函式， 其先檢查
+              localStorage
+              中，是否有使用者上一次使用網頁時選擇的模式（選擇會被記住，因此即便關閉瀏覽器再重新打開，
+              網站仍然會顯示上一次選擇的主題模式），若無，則依當前系統模式返回，
+              讓 reflectPreference 函式將網頁的 html 元素的 data-theme
+              屬性設置為其返回值。
+              網頁載入完成後，在切換按鈕上設置監聽器，監聽點擊事件。當使用者點擊按鈕時，會觸發
+              onClick 函式，進行日夜模式切換， 然後調用 setPreference
+              函式保存使用者的選擇，並調用 reflectPreference
+              函式更新網頁上的主題顯示。
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer id="footer">Email: ellen31725@gmail.com</footer>
+    <script src="./javascripts/theme.js"></script>
+    <script src="./javascripts/contact.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e6d251e8f8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

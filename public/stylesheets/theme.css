@@ -1,0 +1,134 @@
+/* 白天模式 */
+[data-theme="light"] {
+  --header-background-color: #fff8f3;
+  --footer-background-color: #a76f6f;
+  --footer-text-color: #1b2430;
+  --header-text-color: #000000;
+  --h2-color: hsl(234, 12%, 34%);
+  --h4-color: #0f3460;
+  --contact-color: #000000;
+  --contact-hover-color: #666;
+  --body-background-color: #fcece6;
+  --summary-itro-color: #182747;
+  --about-me-background-color: linear-gradient(
+    to right,
+    #ffe7e7 -68.92%,
+    #e6baa3 119.48%
+  );
+  --about-me-content-color: #1b2430;
+  --projects-h3-color: #0f3460;
+  --courses-h3-color: #0f3460;
+  --courses-background-color: linear-gradient(
+    to right,
+    #fff2d8 -68.92%,
+    #ffbd93 119.48%
+  );
+  --questions-background-color: #ffeeee;
+  --questions-card-header-color: hsl(234, 12%, 34%);
+  --questions-card-content-color: hsl(234, 6%, 34%);
+  --learnings-background-color: linear-gradient(
+    to right,
+    #f9dec9 -68.92%,
+    #ffc8c8 119.48%
+  );
+  --icon-fill: #000;
+  --icon-fill-hover: #666;
+  --ease-elastic-3: cubic-bezier(0.2, 0.6, 0.3, 1);
+  --ease-elastic-4: cubic-bezier(0.2, 0.6, 0.3, 1);
+  --ease-3: cubic-bezier(0.42, 0, 0.58, 1);
+  --ease-out-5: cubic-bezier(0, 0, 0.5, 1);
+}
+
+/* 夜間模式 */
+[data-theme="dark"] {
+  --header-background-color: #2d3250;
+  --footer-background-color: #2d3250;
+  --footer-text-color: #fff;
+  --h2-color: #feece2;
+  --h4-color: #e5e0ff;
+  --header-text-color: #fff;
+  --contact-color: #fff;
+  --contact-hover-color: #ccc;
+  --body-background-color: #070f2b;
+  --summary-itro-color: #feece2;
+  --about-me-background-color: #384978;
+  --about-me-content-color: #f8e8ee;
+  --projects-h3-color: #e5e0ff;
+  --courses-h3-color: #e5e0ff;
+  --courses-background-color: #5c7e9f;
+  --questions-background-color: #313f57;
+  --questions-card-color: hsl(229, 6%, 66%);
+  --questions-card-header-color: #fafce3;
+  --questions-card-content-color: #faf1f1;
+  --learnings-background-color: linear-gradient(
+    to right,
+    #a0bcc2 -68.92%,
+    #8d86ae 119.48%
+  );
+  --icon-fill: #fff;
+  --icon-fill-hover: #ccc;
+  --ease-elastic-3: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  --ease-elastic-4: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  --ease-3: cubic-bezier(0.42, 0, 0.58, 1);
+  --ease-out-5: cubic-bezier(0, 0.55, 0.45, 1);
+}
+
+.theme-toggle {
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.sun-and-moon > :is(.moon, .sun, .sun-beams) {
+  transform-origin: center;
+}
+
+.sun-and-moon > :is(.moon, .sun) {
+  fill: var(--icon-fill);
+}
+
+.theme-toggle:is(:hover, :focus-visible) > .sun-and-moon > :is(.moon, .sun) {
+  fill: var(--icon-fill-hover);
+}
+
+.sun-and-moon > .sun {
+  transition: transform 0.5s var(--ease-elastic-3);
+}
+
+.sun-and-moon > .sun-beams {
+  stroke: var(--icon-fill);
+  stroke-width: 2px;
+  transition: transform 0.5s var(--ease-elastic-4), opacity 0.5s var(--ease-3);
+}
+
+.theme-toggle:is(:hover, :focus-visible) .sun-and-moon > .sun-beams {
+  stroke: var(--icon-fill-hover);
+}
+
+.sun-and-moon .moon > circle {
+  transition: transform 0.25s var(--ease-out-5);
+}
+
+@supports (cx: 1) {
+  .sun-and-moon .moon > circle {
+    transition: cx 0.25s var(--ease-out-5);
+  }
+}
+
+[data-theme="dark"] .sun-and-moon > .sun {
+  transition-timing-function: var(--ease-3);
+  transition-duration: 0.25s;
+  transform: scale(1.75);
+}
+
+[data-theme="dark"] .sun-and-moon > .sun-beams {
+  opacity: 0;
+  transition-duration: 0.15s;
+  transform: rotateZ(-25deg);
+}
+
+[data-theme="dark"] .sun-and-moon > .moon > circle {
+  transform: translateX(-9px);
+}
