@@ -80,6 +80,7 @@ footer {
   background-color: var(--footer-background-color);
   color: var(--footer-text-color);
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 /* SECTION */
@@ -443,6 +444,15 @@ section {
 }
 
 /* SECTION: Learnings */
+
+/* SECTION: Sayings */
+
+#sayings a {
+  color: var(--sayings-link-color);
+  font-size: 1.2rem;
+}
+
+/* SECTION: Sayings */
 
 @media (max-width: 1320px) {
   section {

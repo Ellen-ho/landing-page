@@ -31,6 +31,7 @@
     #f9dec9 -68.92%,
     #ffc8c8 119.48%
   );
+  --sayings-link-color: #0070bb;
   --icon-fill: #000;
   --icon-fill-hover: #666;
   --ease-elastic-3: cubic-bezier(0.2, 0.6, 0.3, 1);
@@ -65,6 +66,7 @@
     #a0bcc2 -68.92%,
     #8d86ae 119.48%
   );
+  --sayings-link-color: #89cff0;
   --icon-fill: #fff;
   --icon-fill-hover: #ccc;
   --ease-elastic-3: cubic-bezier(0.68, -0.55, 0.27, 1.55);
