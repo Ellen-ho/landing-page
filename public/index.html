@@ -252,7 +252,7 @@
           <h3 class="card-header">想要加入的公司？為什麼想加入該公司？</h3>
           <p class="card-content">
             我想加入的公司是
-            Scribo。是一間打造智能診所服務的醫療科技新創，想加入的原因是：其服務產產品解決的臨床痛點很務實，創辦人具有醫療背景並且正在數據領域進修，團隊擁有在醫療科技方面的專業知識和跨領域能力。
+            Scribo。是一間打造智能診所服務的醫療科技新創，想加入的原因是：其服務產品解決的臨床痛點很務實，創辦人具有醫療背景並且正在數據領域進修，團隊擁有在醫療科技方面的專業知識和跨領域能力。
           </p>
           <img
             src="/images/icon-team-builder.png"
@@ -292,18 +292,19 @@
               HTML檔 先定義好 SVG 元素區塊的範圍，SVG
               中共含有三部份主要內容，分別是：mask
               元素、太陽圓形主體、太陽光芒。 mask
-              元素中創造一個白色矩形跟黑色圓形，由這個黑色圓形來遮擋部份的太陽圓形主體，讓圖形變成彎彎的月亮，如此可讓太陽跟月亮透過同一個
-              SVG 内部的遮罩效果来實現。
+              元素中創造一個白色矩形跟黑色圓形，mask
+              用來遮擋部份的太陽圓形主體，讓圖形變成彎彎的月亮，如此可讓太陽跟月亮在同一個
+              SVG 內部来實現。
             </p>
           </li>
           <li>
             <span>CSS: theme.css 檔</span>
             <p>
               theme.css
-              分別定義了白天模式和夜間模式下的視覺風格，包括文字顏色、背景顏色、圖標填充顏色以及動畫效果。
-              藉由HTML中根元素的 data-theme 屬性被設置為 light 或 dark
-              ，決定相對應的CSS變量，以改變網頁的外觀。
-              另外，在主題切換時做了一些動畫和過渡效果，像是：太陽主體的縮放變化（transform:
+              分別定義了白天模式和夜間模式下的視覺風格，包括文字顏色、背景顏色、圖標填充顏色以及動畫效果。藉由
+              HTML 中根元素的 data-theme 屬性被設置為 light 或
+              dark，決定相對應的 CSS
+              變量，以改變網頁的外觀。另外，在主題切換時做了一些動畫和過渡效果，像是：太陽主體的縮放變化（transform:
               scale()）、太陽光芒的不透明度變化（opacity）、月亮的位置變化（transform:
               translateX()）。
             </p>
@@ -315,13 +316,12 @@
               函式，該函式會再調用 getColorPreference 函式， 其先檢查
               localStorage
               中，是否有使用者上一次使用網頁時選擇的模式（選擇會被記住，因此即便關閉瀏覽器再重新打開，
-              網站仍然會顯示上一次選擇的主題模式），若無，則依當前系統模式返回，
-              讓 reflectPreference 函式將網頁的 html 元素的 data-theme
-              屬性設置為其返回值。
-              網頁載入完成後，在切換按鈕上設置監聽器，監聽點擊事件。當使用者點擊按鈕時，會觸發
-              onClick 函式，進行日夜模式切換， 然後調用 setPreference
+              網站仍然會顯示上一次選擇的主題模式），若無，則依當前系統模式返回，讓
+              reflectPreference 函式將網頁 html 元素的 data-theme
+              屬性設置為其返回值。網頁載入完成後，在切換按鈕上設置監聽器，監聽點擊事件。當使用者點擊按鈕時，會觸發
+              onClick 函式，進行日夜模式切換，然後調用 setPreference
               函式保存使用者的選擇，並調用 reflectPreference
-              函式更新網頁上的主題顯示。
+              函式更新網頁上的主題模式顯示。
             </p>
           </li>
         </ul>
@@ -330,7 +330,9 @@
     <section id="sayings">
       <div class="section-inner-wrapper col">
         <h2>其他想跟 WeHelp 說的</h2>
-        <a href="https://your-github-page-url" target="_blank">我想說的話</a>
+        <a href="https://ellen-ho.github.io/fun-poker/" target="_blank"
+          >我想說的話</a
+        >
       </div>
     </section>
     <footer id="footer">Email: ellen31725@gmail.com</footer>
